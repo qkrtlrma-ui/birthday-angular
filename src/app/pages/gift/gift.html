@@ -1,0 +1,14 @@
+<h2>🎁 선물을 골라줘!</h2>
+<p>상자 3개 중 하나를 선택해봐.</p>
+
+<div class="gift-list">
+  <button class="gift-box" (click)="selectGift(1)">🎁</button>
+  <button class="gift-box" (click)="selectGift(2)">🎁</button>
+  <button class="gift-box" (click)="selectGift(3)">🎁</button>
+</div>
+
+@if (selectedGift !== null) {
+  <p class="result">
+    {{ selectedGift }}번 선물을 골랐어! 선물은 とくのう ゆうし
+  </p>
+}

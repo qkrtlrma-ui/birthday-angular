@@ -1,0 +1,22 @@
+<h2>📸 인증샷</h2>
+<p>카메라 권한을 허용ㄱㄱ</p>
+
+<div class="camera-box">
+  <video #video autoplay playsinline></video>
+
+  <button class="capture-button" (click)="capturePhoto()">
+    사진 찍기
+  </button>
+</div>
+
+@if (photoUrl) {
+  <div class="photo-frame">
+    <img [src]="photoUrl" alt="인증샷" />
+
+    <p class="photo-caption">
+      생일즈니 찰칵 🎉
+    </p>
+  </div>
+}
+
+<canvas #canvas hidden></canvas>

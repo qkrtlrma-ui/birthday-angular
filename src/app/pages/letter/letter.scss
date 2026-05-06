@@ -1,0 +1,32 @@
+.letter-box {
+  position: relative;
+  width: 340px;
+  min-height: 260px;
+  margin: 40px auto;
+}
+
+.envelope {
+  font-size: 120px;
+  transition: 0.3s;
+}
+
+.letter {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.3s;
+  background: white;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.letter-box:hover .envelope {
+  transform: translateY(-20px);
+}
+
+.letter-box:hover .letter {
+  opacity: 1;
+  transform: translateY(0);
+}

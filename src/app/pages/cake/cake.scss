@@ -1,0 +1,20 @@
+.cake {
+  font-size: 160px;
+  margin: 40px 0;
+  animation: bounce 1.4s infinite;
+}
+
+audio {
+  margin-top: 20px;
+  width: 320px;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-16px);
+  }
+}

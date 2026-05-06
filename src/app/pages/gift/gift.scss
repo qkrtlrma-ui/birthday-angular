@@ -1,0 +1,28 @@
+.gift-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.gift-box {
+  width: 130px;
+  height: 130px;
+  font-size: 64px;
+  border: none;
+  border-radius: 24px;
+  background: #fff3c4;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.gift-box:hover {
+  transform: translateY(-8px) scale(1.05);
+  background: #ffe58f;
+}
+
+.result {
+  margin-top: 32px;
+  font-size: 20px;
+  font-weight: bold;
+}
